@@ -1,6 +1,30 @@
 import * as THREE from "https://unpkg.com/three@0.162.0/build/three.module.js";
 import { OrbitControls } from "https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js";
 
+function showBootError(err) {
+  console.error(err);
+  const el = document.createElement("div");
+  el.style.position = "fixed";
+  el.style.left = "16px";
+  el.style.right = "16px";
+  el.style.bottom = "16px";
+  el.style.zIndex = "9999";
+  el.style.padding = "12px 12px";
+  el.style.borderRadius = "14px";
+  el.style.border = "1px solid rgba(255,255,255,.15)";
+  el.style.background = "rgba(10, 12, 18, .78)";
+  el.style.backdropFilter = "blur(10px)";
+  el.style.color = "rgba(240,245,255,.92)";
+  el.style.fontSize = "12px";
+  el.innerHTML =
+    "<b>No se pudo iniciar la escena 3D.</b><br/>" +
+    "Abre la consola del navegador para ver el error (F12).<br/>" +
+    "<span style='opacity:.75'>Suele pasar si WebGL está desactivado o si alguna API no está disponible.</span>";
+  document.body.appendChild(el);
+}
+
+try {
+
 const canvas = document.getElementById("c");
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
@@ -160,11 +184,12 @@ function addDesk({ x, z, rotY = 0, accent = "#6cf3ff" }) {
   g.add(keyboard);
 
   // Mouse
+  // NOTE: CapsuleGeometry no está disponible en todas las builds; usamos una esfera escalada.
   const mouse = new THREE.Mesh(
-    new THREE.CapsuleGeometry(0.07, 0.12, 6, 12),
+    new THREE.SphereGeometry(0.09, 18, 12),
     new THREE.MeshStandardMaterial({ color: new THREE.Color("#0a0f1f"), roughness: 0.65, metalness: 0.25 })
   );
-  mouse.rotation.z = Math.PI / 2;
+  mouse.scale.set(1.15, 0.65, 1.6);
   mouse.position.set(0.62, 0.90, 0.18);
   mouse.castShadow = true;
   g.add(mouse);
@@ -333,3 +358,6 @@ function animate() {
 }
 animate();
 
+} catch (err) {
+  showBootError(err);
+}
