@@ -24,6 +24,7 @@ function showBootError(err) {
 }
 
 try {
+window.__OFFICETECH_BOOTED__ = true;
 
 const canvas = document.getElementById("c");
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });

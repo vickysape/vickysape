@@ -28,6 +28,36 @@
       Hecho con Three.js · Look tech (neón suave)
     </div>
 
+    <script>
+      // Si el módulo no llega a arrancar, mostramos un aviso visible.
+      // Esto ayuda cuando `type="module"` falla al cargar (MIME/CORS/bloqueo) y no hay escena.
+      window.__OFFICETECH_BOOTED__ = false;
+      window.addEventListener("error", () => {
+        // dejamos que el watchdog pinte el aviso (evita duplicados)
+      });
+      setTimeout(() => {
+        if (window.__OFFICETECH_BOOTED__) return;
+        const el = document.createElement("div");
+        el.style.position = "fixed";
+        el.style.left = "16px";
+        el.style.right = "16px";
+        el.style.bottom = "16px";
+        el.style.zIndex = "9999";
+        el.style.padding = "12px 12px";
+        el.style.borderRadius = "14px";
+        el.style.border = "1px solid rgba(255,255,255,.15)";
+        el.style.background = "rgba(10, 12, 18, .78)";
+        el.style.backdropFilter = "blur(10px)";
+        el.style.color = "rgba(240,245,255,.92)";
+        el.style.fontSize = "12px";
+        el.innerHTML =
+          "<b>La escena 3D no ha arrancado.</b><br/>" +
+          "Suele significar que <code>main.js</code> no se cargó o falló al iniciar.<br/>" +
+          "Abre la consola (F12) → <b>Console</b> y mira si hay un error de módulo/CORS/MIME.";
+        document.body.appendChild(el);
+      }, 1800);
+    </script>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
