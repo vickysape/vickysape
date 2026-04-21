@@ -34,6 +34,15 @@ Me gusta construir soluciones claras, mantenibles y orientadas a resultados.
 
 ---
 
+## Oficina Tech (interactiva)
+
+Una mini “oficina” 3D estilo tech (luces neón + pantallas clicables) hecha con Three.js.
+
+- Demo: [vickysape.github.io/vickysape](https://vickysape.github.io/vickysape/)
+- Si no te abre, actívalo en GitHub: **Settings → Pages → Deploy from a branch → Branch: `main` / Folder: `/docs`**
+
+---
+
 ## Proyectos
 - **To-Do App Full Stack** (HTML/CSS/JS + Express + PostgreSQL)
   - API REST: listar, crear, completar tareas

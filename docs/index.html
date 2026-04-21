@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina Tech — Victoria</title>
+    <meta name="description" content="Mini oficina 3D interactiva (Three.js) para el perfil de GitHub de Victoria." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hud" role="region" aria-label="Controles e información">
+      <div class="hud__title">Oficina Tech</div>
+      <div class="hud__subtitle">Arrastra para girar · rueda para zoom · click en pantallas</div>
+
+      <div class="hud__links">
+        <a class="hud__btn" href="https://github.com/vickysape" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="hud__btn hud__btn--ghost" href="../README.md" target="_blank" rel="noreferrer">Volver al README</a>
+      </div>
+
+      <div class="hud__hint">
+        Tip: las pantallas abren enlaces (puedes cambiarlos en <code>docs/main.js</code>).
+      </div>
+    </div>
+
+    <canvas id="c"></canvas>
+
+    <div class="footer" aria-hidden="true">
+      Hecho con Three.js · Look tech (neón suave)
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
