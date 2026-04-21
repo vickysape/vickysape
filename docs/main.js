@@ -33,8 +33,10 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.1;
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.setClearColor(new THREE.Color("#05060a"), 1);
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color("#05060a");
 scene.fog = new THREE.Fog(new THREE.Color("#05060a"), 8, 24);
 
 const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 80);
@@ -47,6 +49,26 @@ controls.minDistance = 4.0;
 controls.maxDistance = 14.0;
 controls.maxPolarAngle = Math.PI * 0.48;
 controls.target.set(0, 1.0, 0);
+camera.lookAt(controls.target);
+
+// Debug geometry (si esto no se ve, hay un problema de render)
+const debugCube = new THREE.Mesh(
+  new THREE.BoxGeometry(0.5, 0.5, 0.5),
+  new THREE.MeshStandardMaterial({
+    color: new THREE.Color("#0a0a0f"),
+    emissive: new THREE.Color("#6cf3ff"),
+    emissiveIntensity: 2.0,
+    roughness: 0.35,
+    metalness: 0.25,
+  })
+);
+debugCube.position.set(0, 1.2, 0);
+debugCube.castShadow = true;
+scene.add(debugCube);
+
+const grid = new THREE.GridHelper(12, 24, new THREE.Color("#233066"), new THREE.Color("#11162a"));
+grid.position.y = 0.001;
+scene.add(grid);
 
 function resize() {
   const w = window.innerWidth;
