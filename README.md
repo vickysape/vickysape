@@ -52,7 +52,7 @@ const victoria = {
 | Certification | Issuer |
 |--------------|--------|
 | SC-900: Security, Compliance & Identity Fundamentals | Microsoft |
-| Security Audit | UNIVERSAE |
+| Security Audit | Microsoft |
 
 ---
 
@@ -169,7 +169,7 @@ Completing my DAM degree at UNIVERSAE
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariavictoriasapelli/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sapelli-maria-victoria)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vickysape)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mvictoriasapelli@gmail.com)
 
