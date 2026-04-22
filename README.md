@@ -1,58 +1,33 @@
-<div align="center">
+# Hola 👋, soy Victoria
+### Desarrolladora Full Stack | Automatización · Web · Mobile
 
-## Hola, soy Victoria
-**Estudiante de DAM | En prácticas | Automatización · Web · Mobile**
+Apasionada por la tecnología y estudiante avanzada de **Desarrollo de Aplicaciones Multiplataforma (DAM)**. Me especializo en construir soluciones eficientes, mantenibles y orientadas a resultados. Disfruto creando desde flujos de automatización hasta plataformas web complejas y ecosistemas móviles.
 
-Estoy empezando a especializarme en **automatización** y desarrollo de **aplicaciones web y móviles**.  
-Me gusta construir soluciones claras, mantenibles y orientadas a resultados.
+## 🚀 Proyectos Destacados
 
-</div>
+### 🏆 [Ecosistema Digital: App Hyrox](https://github.com/vickysape/App-Hyrox) 
+Plataforma integral orientada a atletas de Hyrox. Cuenta con un sistema avanzado de nivelación gamificada, análisis de progresión de rendimiento y registro de tiempos, preparado para integraciones con Inteligencia Artificial.
+- **Stack Tecnológico:** Next.js (React 19), TypeScript, Tailwind CSS. Arquitectura diseñada para consumo de API REST.
 
----
+### 🎮 [Oficina Tech 3D Interactiva](https://vickysape.github.io/vickysape/)
+Una "Sede Virtual" inmersiva en 3D diseñada con estilo *cyber-tech* (luces de neón y monitores interactivos).
+- **Stack Tecnológico:** JavaScript vanilla, Three.js, WebGL.
 
-## En qué estoy enfocada
-- Automatización de procesos y flujos
-- Desarrollo web (frontend + backend)
-- Desarrollo mobile (en aprendizaje)
-- Bases de datos (PostgreSQL)
-- Buenas prácticas (estructura, APIs, control de versiones)
+### 📋 To-Do App Full Stack
+Sistema de gestión de tareas con validación robusta y operaciones a nivel de servidor y base de datos relacional.
+- **Stack Tecnológico:** HTML/CSS/JS, Express.js (Node), PostgreSQL.
 
-## Tecnologías (en progreso)
-![JavaScript](https://img.shields.io/badge/JavaScript-111?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![Node.js](https://img.shields.io/badge/Node.js-111?style=for-the-badge&logo=node.js&logoColor=3C873A)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111?style=for-the-badge&logo=postgresql&logoColor=316192)
-![HTML5](https://img.shields.io/badge/HTML5-111?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/CSS3-111?style=for-the-badge&logo=css3&logoColor=1572B6)
+## 🛠️ Tecnologías y Herramientas
 
----
+- **Frontend:** React, Next.js, React Native, Tailwind CSS, Three.js.
+- **Backend & Arquitectura:** Node.js, Express, NestJS (conceptos), API REST.
+- **Bases de Datos:** PostgreSQL.
+- **Control de Versiones & Deploy:** Git, GitHub, Vercel/Expo.
 
-## Algo visual (3D)
+## 📈 Estadísticas
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=vickysape&show_icons=true&theme=tokyonight&locale=es" alt="GitHub Stats" width="400" />
+</p>
 
-<div align="center">
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D contributions" />
-</div>
-
----
-
-## Oficina Tech (interactiva)
-
-Una mini “oficina” 3D estilo tech (luces neón + pantallas clicables) hecha con Three.js.
-
-- Demo: [vickysape.github.io/vickysape](https://vickysape.github.io/vickysape/)
-- Si no te abre, actívalo en GitHub: **Settings → Pages → Deploy from a branch → Branch: `main` / Folder: `/docs`**
-
----
-
-## Proyectos
-- **To-Do App Full Stack** (HTML/CSS/JS + Express + PostgreSQL)
-  - API REST: listar, crear, completar tareas
-  - Repo: _(añadir enlace)_
-
----
-
-## Stats
-
-<div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=vickysape&show_icons=true&theme=tokyonight" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vickysape&layout=compact&theme=tokyonight" />
-</div>
+## 📫 Conectemos
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Victoria_Sapelli-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/sapelli-maria-victoria/)
