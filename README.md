@@ -1,5 +1,5 @@
 <picture>
- <img src="./it-profile-3d.jpg" alt="IT Developer" width="100%"/>
+<img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/vercel/share/v0-project/public/images/it-profile-3d-Yyi2G3MuznVZeTHgH60mllj32NkOs3.jpg" alt="IT Developer" width="100%"/>
 </picture>
 
 <div align="center">
