@@ -21,7 +21,7 @@
 ```ts
 const victoria = {
   location: "Spain",
-  education: "DAM @ UNIVERSAE (2023 - 2025)",
+  education: "DAM @ UNIVERSAE (2024 - 2026)",
   
   focus: [
     "Full Stack Development",
