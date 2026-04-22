@@ -20,8 +20,8 @@
 
 ```typescript
 const victoria = {
-  location: "Alicante, Spain 🇪🇸",
-  education: "DAM @ UNIVERSAE (2023 - 2025)",
+  location: "Malaga, Spain 🇪🇸",
+  education: "DAM @ UNIVERSAE (2024 - 2026)",
   currentFocus: ["Mobile Development", "Cybersecurity", "Cloud Architecture"],
   
   certifications: [
